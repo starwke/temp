@@ -1,0 +1,42 @@
+git remote -v  ### 查看远程分支
+git remote set-url origin https://github.com/starwke/temp.git ###本地仓库源跟远程仓库源进行关联。
+git add . ###添加到追踪
+git init ### 重新初始化仓库
+git remote set-url origin git@github.com:starwke/temp.git ###修改远程仓库源
+git add.
+git remote add origin git@github.com:starwke/temp.git  ###没有关联远程仓库源，添加远程仓库源
+git remote -v
+git pull --rebase  ###是fetch rebase的组合；拉取分支并和本地分支进行合并
+git branch --set-upstream-to=origin/main master ### 本地分支和远程分支关联
+git branch -l
+ git branch -a
+git add . 
+git status ###查看本地仓库的状态
+git commit -m "第一版"
+git branch -l
+git branch --set-upstream-to=origin/main master
+git pull ###fetch和merge的组合，fetch：把远程拉倒本地。
+git pull --allow-unrelated-histories
+git status
+git add README.md
+git merge --continue ###解决冲突，继续merge
+git push
+git push origin master
+git log
+git reset --soft 7e7c96cf42eeab9de4dae131c44cd4151d0e7e06
+git status
+git add .gitignore
+git status
+git restore ^HEAD data
+git restore .
+git status
+git rm -r --cached .
+git status
+git add .
+git status
+git commit -m "提交ignore"
+git log
+git pull
+git push
+git push origin master
+git push origin master:main -f
