@@ -52,7 +52,7 @@ class CustomizeNebulaGraphStore(NebulaGraphStore):
             column_id = self._generate_column_id(table_name, name)
             column_ids.append(column_id)
             items.append(
-                f"{QUOTE}{column_id}{QUOTE}:({QUOTE}{name}{QUOTE}, {QUOTE}{name_cn}{QUOTE}, {QUOTE}{comment}{QUOTE})"
+                f"{QUOTE}{column_id}{QUOTE}:({QUOTE}{name_cn}{QUOTE}, {QUOTE}{name}{QUOTE}, {QUOTE}{comment}{QUOTE})"
             )
 
         syntax = ",".join(items)
